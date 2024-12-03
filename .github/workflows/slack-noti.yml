@@ -74,7 +74,9 @@ jobs:
       - name: Slack Notification
         uses: rtCamp/action-slack-notify@v2
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }},
+          MSG_MINIMAL : true,
+          SLACK_MESSAGE: "PR 링크: <${{ github.event.pull_request.html_url }}|클릭하여 PR 보기>"
 
       - name: Post to a Slack channel
         run: |
