@@ -50,12 +50,12 @@ jobs:
             core.setOutput('comment', comment);
             
             // Request review
-            await github.rest.pulls.requestReviewers({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: context.payload.pull_request.number,
-              reviewers: electedReviewers
-            });
+#            await github.rest.pulls.requestReviewers({
+#              owner: context.repo.owner,
+#              repo: context.repo.repo,
+#              pull_number: context.payload.pull_request.number,
+#              reviewers: electedReviewers
+#            });
 
       - name: Create Pull Request Comment
         uses: actions/github-script@v7.0.1
