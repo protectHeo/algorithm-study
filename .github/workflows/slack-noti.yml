@@ -5,7 +5,7 @@ on:
     types:
       - opened
       - reopened
-    branches: ['protectHeo','DGJSKIM', 'anjungin', 'unie11']
+    branches: ['protectHeo','DGJSKIM', 'anjungin', 'unie11', 'realain']
 
 permissions:
   pull-requests: write
