@@ -25,6 +25,7 @@ public class Solution {
             answer+=student.fruitBasket.getFruitValue(student.fruitBasket.getMinFruit());
         }
 
+      
         return answer;
     }
 
